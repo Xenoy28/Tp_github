@@ -6,27 +6,28 @@
     <title>inscription</title>
 </head>
 <body>
+<form action="../src/traitement/inscription.php" method="POST">
     <h2>Formulaire</h2>
         <form>
-            <label for="Prenom">Prénom:</label>
+            <label for="prenom">Prénom:</label>
             <br>
-            <input type ="text" id="Prenom" name="Prenom"/>
+            <input type ="text" id="prenom" name="prenom" required/>
             <br>
             <label for="nom">Nom:</label>
             <br>
             <input type ="text" id="nom" name="nom"/>
             <br>
-            <label for="Mail">Mail:</label>
+            <label for="email">Mail:</label>
             <br>
-            <input type ="email" id="Mail" name="Mail"/>
+            <input type ="email" id="email" name="email" required/>
             <br>
-            <label for="Telephone">Telephone:</label>
+            <label for="tel_fixe">Telephone:</label>
             <br>
-            <input type ="text" id="Telephone" name="Telephone"/>
+            <input type ="text" id="tel_fixe" name="tel_fixe"/>
             <br>
-            <label for="Adresse">Adresse:</label>
+            <label for="rue">Rue:</label>
             <br>
-            <input type ="text" id="Adresse" name="Adresse"/>
+            <input type ="text" id="rue" name="rue"/>
             <br>
             <label for="Ville">Ville:</label>
             <br>
@@ -36,5 +37,7 @@
             <br>
             <input type ="text" id="cp" name="cp"/>
             <br>
+            <button type="submit">Envoyer</button>
+        </form>
 </body>
 </html>
