@@ -32,8 +32,6 @@ if($auteur == false){
     <label>Pays</label>
     <select name="Pays">
         <?php
-        $bdd = null;
-        require_once "../src/bdd/connexion.php";
         $sql = "SELECT * FROM pays";
         $req = $bdd->prepare($sql);
         $req->execute();
