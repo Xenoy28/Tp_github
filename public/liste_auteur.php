@@ -12,6 +12,7 @@
         <td>Noms</td>
         <td>Prénoms</td>
         <td>Date_naissance</td>
+        <td>pays</td>
         <td>Modification</td>
         <td>Suppression</td>
     </tr>
@@ -30,6 +31,7 @@
             <td><?php echo $row['nom']; ?></td>
             <td><?php echo $row['prenom']; ?></td>
             <td><?php echo $row['date_naissance']; ?></td>
+            <td><?php echo $row['ref_pays']; ?></td>
             <td><button><a href='modifier_auteur.php?id_auteur=<?php echo $row['id_auteur']; ?>'>Modifier</a> </button></td>
             <td>
                 <form  action="../src/traitement/supprimer_auteur.php" method="post">
