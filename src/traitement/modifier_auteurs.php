@@ -22,7 +22,7 @@ if(isset($_POST['nom'])  && isset($_POST['prenom'])
     ));
     header("Location: ../../public/liste_auteur.php");
 }else{
-    header("Location: ../../public/modifier_auteur.php?id_auteur=".$_POST['id_auteur']);
+    header("Location: ../../public/modifier_auteurs.php?id_auteur=".$_POST['id_auteur']);
 
 }
 
