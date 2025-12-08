@@ -1,3 +1,4 @@
+<?php require 'auth.php'; ?>
 <?php
 $bdd = null;
 require_once '../src/bdd/connexion.php';
